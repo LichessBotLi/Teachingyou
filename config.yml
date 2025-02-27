@@ -87,9 +87,9 @@ engine:                            # Engine settings.
 #   Hash: 256
 
   uci_options:                     # Arbitrary UCI options passed to the engine.
-    #Move Overhead: 100            # Increase if your bot flags games too often.
-    #Threads: 4                    # Max CPU threads the engine can use.
-    #Hash: 512                     # Max memory (in megabytes) the engine can allocate.
+    Move Overhead: 100            # Increase if your bot flags games too often.
+    Threads: 4                    # Max CPU threads the engine can use.
+    Hash: 512                     # Max memory (in megabytes) the engine can allocate.
     #SyzygyPath: "./syzygy/"       # Paths to Syzygy endgame tablebases that the engine reads.
     UCI_ShowWDL: true             # Show the chance of the engine winning.
 #   go_commands:                   # Additional options to pass to the UCI go command.
@@ -155,7 +155,7 @@ challenge:                         # Incoming challenges.
     #- correspondence
     #- unlimited
   modes:                           # Game modes to accept.
-    #- casual                       # Unrated games.
+    - casual                       # Unrated games.
     - rated                        # Rated games - must comment if the engine doesn't try to win.
   block_list:                      # List of users from which the challenges are always declined.
     #- YoBot_v2
